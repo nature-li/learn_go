@@ -38,7 +38,7 @@ func dbQuery(query int, pool *sync.Pool) {
 	log.Printf("第%d个查询，使用的是ID为%d的数据库连接", query, conn.ID)
 }
 
-func main_in_pool() {
+func PoolMain() {
 	var wg sync.WaitGroup
 	wg.Add(maxCoroutine)
 

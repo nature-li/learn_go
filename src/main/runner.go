@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-func main_in_runner() {
+func RunnerMain() {
 	fmt.Println("...开始执行任务...")
 
 	timeout := 3 * time.Second

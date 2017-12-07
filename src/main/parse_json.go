@@ -37,7 +37,7 @@ func ParseConfig(path string) {
 	fmt.Println(config.LocalPort)
 }
 
-func main_() {
+func ParseJsonMain() {
 	ParseConfig("./config.json")
 }
 

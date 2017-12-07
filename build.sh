@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
+# open debug flag
 set -x
 
+# set GOPATH
 export GOPATH=$(cd $(dirname $0) && pwd)
-echo ${GOPATH}
 
 # compile
-cd src/main
-go install main
-
-cd ${GOPATH}
+rm -rf ${GOPATH}/bin
+rm -rf ${GOPATH}/pkg
+$(cd src && go install main)
 
 # run
 ${GOPATH}/bin/main
-
-

@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func main() {
+func LearnMain() {
 	s := make([]int, 0, 5)
 	fmt.Println(s)
 
